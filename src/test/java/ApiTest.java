@@ -8,6 +8,7 @@ public class ApiTest {
     public void test(){
 
     assertEquals(200, given().get("https://petstore.swagger.io/v2/pet/1").statusCode());
+        given().get("https://petstore.swagger.io/v2/pet/1").prettyPrint();
 
     }
 }
