@@ -9,7 +9,7 @@ public class ApiTest {
           
         
     System.out.println("Test çalıştı");
-    assertEquals(200, given().get("https://petstore.swagger.io/v2/pet/1").statusCode());
+    assertEquals(200, given().get("https://petstore.swagger.io/v2/pet/findByStatus?status=available&status=available").statusCode());
         given().get("https://petstore.swagger.io/v2/pet/findByStatus?status=available&status=available").prettyPrint();
 
     }
