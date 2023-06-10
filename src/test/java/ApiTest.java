@@ -10,7 +10,7 @@ public class ApiTest {
         
     System.out.println("Test çalıştı");
     assertEquals(200, given().get("https://restful-booker.herokuapp.com/booking").statusCode());
-        given().get("https://petstore.swagger.io/v2/pet/findByStatus?status=available&status=available").prettyPrint();
+        given().get("https://restful-booker.herokuapp.com/booking").prettyPrint();
 
     }
 }
