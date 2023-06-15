@@ -31,7 +31,7 @@ public class ApiTest {
 
 //        iii) Send the request and get the response
         Response response = given().when().get(url);//User sends a GET Request to the url
-        response.prettyPrint();
+       // response.prettyPrint();
 
 //        iv)  Do assertion
         response.
